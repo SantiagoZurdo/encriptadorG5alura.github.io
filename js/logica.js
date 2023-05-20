@@ -37,7 +37,7 @@ function encrypt() {
   svgWarning.classList.remove("filter");
   inputText.focus();
   const text = inputText.value;
-  if (/[A-Z0-9Ññ!@#$%^&*()_+\-=[\]{};':"\\|,.<>/?]/g.test(text)) {
+  if (/[A-Z0-9Ññ"´!@#$%^&*()_+\-=[\]{};':"\\|,.<>/?]/g.test(text)) {
     if (!filterActive) {
       svgWarning.classList.add("filter");
       filterActive = true;
@@ -63,7 +63,7 @@ function encrypt() {
 function decrypt() {
   inputText.focus();
   const text = inputText.value;
-  if (/[A-Z0-9Ññ!@#$%^&*()_+\-=[\]{};':"\\|,.<>/?]/g.test(text)) {
+  if (/[A-Z0-9Ññ"´!@#$%^&*()_+\-=[\]{};':"\\|,.<>/?]/g.test(text)) {
     if (!filterActive) {
       svgWarning.classList.add("filter");
       filterActive = true;
