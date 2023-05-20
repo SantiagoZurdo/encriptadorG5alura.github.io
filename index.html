@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>My Page</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <div class="main-container">   
+      <img class="svg-logo" src="./public/aluraLogo.svg" alt="Logo de Alura">
+      <div class = "sub-container">
+        <img class="svg-warning" src="./public/warningMessage.svg" alt="Mensaje de advertencia">
+        <div class="inp-out-container">
+          <div class="input-container">          
+            <textarea id="inputText" class="inputText"></textarea>
+            <div class="buttons-container">
+              <div class="btn-encrypt">
+                <button class="btnEncryptText">Encriptar</button>
+              </div>
+              <div class="btn-decrypt">
+                <button class="btnDecryptText">Desencriptar</button>
+              </div>
+            </div>
+          </div>
+          <div class="output-container">                         
+            <textarea id="outputText" class="outputText" readonly></textarea> 
+            <div class="image-container">
+              <img class="svg-notfound-text-and-image" src="./public/notfindedTextandImage.svg"> 
+            </div>
+            <div class="btn-copy-container"> 
+              <button class="btnCopy" disabled>Copiar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="./js/logica.js"></script>
+      <div class="footer-container">
+        <p>Santiago Zurdo G5 Alura</p>
+        <img class="svg-linkdn" src="./public/linkdn.svg" alt="Linkedin" id="linkedin-image">
+        <img class="svg-githb" src="./public/githb.svg" alt="Github" id="github-image">
+      </div>
+    </div>
+  </body>
+</html>

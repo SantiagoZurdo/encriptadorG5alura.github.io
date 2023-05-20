@@ -1,0 +1,153 @@
+body {
+  margin: 0%;
+}
+.sub-container{
+  align-self: center;
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: white;
+}
+ .svg-logo {
+  width: 2rem;
+  margin: 1rem;
+}
+.svg-warning {
+  width: 20rem; 
+}
+.inp-out-container {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  align-items: flex;
+  margin-bottom: 2rem;
+
+}
+.input-container {
+  flex-direction: column;
+}
+.inputText {
+  scrollbar-width: none;
+  resize: none;
+  padding: 2rem;
+  gap: 2rem;
+  width: 42rem;
+  height: 28rem;
+  background: transparent;
+  box-shadow: 0rem 1.5rem 2rem -0.5rem rgba(0, 0, 0, 0.08);
+  border-radius: 2rem;
+  overflow-y: auto;
+  font-size: 1rem;
+  font-family: "inter";
+  outline: none;
+  align-items: center;
+}
+.buttons-container {
+  display: flex;
+  flex-direction: row;
+  
+}
+.btn-encrypt,
+.btn-decrypt {
+  margin-top: 1rem;
+}
+.btn-decrypt {
+  margin-left: 6rem;
+}
+.btnEncryptText,
+.btnDecryptText,
+.btnCopy {
+  width: 20rem;
+  height: 4rem;
+
+  border-radius: 1rem;
+  color:white;
+  font-size: 1rem;
+  font-family: "inter";
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+.output-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 2rem;
+}
+.image-container {
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+.svg-notfound-text-and-image {
+  width: 15rem;
+}
+.btn-copy-container {
+  display: flex;
+  margin-top: 1rem;
+}
+.svg-warning.filter {
+  filter: invert(11%) sepia(99%) saturate(7395%) hue-rotate(359deg) brightness(101%) contrast(108%);/*refact*/
+}
+.outputText {
+  scrollbar-width: none;
+  resize: none;
+  padding: 2rem;
+  gap:  2rem;
+  width: 23rem;
+  height: 28rem;
+  background: transparent;
+  box-shadow: 0rem 1.5rem 2rem -0.5rem rgba(0, 0, 0, 0.08);
+  border-radius: 2rem;
+  overflow-y: auto;
+  outline: none;
+}
+.inputText::-webkit-scrollbar,
+.outputText::-webkit-scrollbar {
+  display: none;
+}
+@keyframes rebote {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.rebote-activo {
+  visibility: visible;
+  animation-name: rebote;
+  animation-duration: 1s;
+  animation-iteration-count: 3s;
+  animation-direction: 3s;
+}
+@font-face {
+  font-family: 'inter';
+  src: url(../css/fonts/inter.otf);
+}
+.footer-container {
+  margin-top:auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0A3871;
+  color: #FFFFFF;
+  font-family: "inter";
+  width: 100%;
+  height: 5rem;
+}
+.svg-githb {
+  cursor: pointer;
+  width: 1.3rem;
+}
+.svg-linkdn {
+  cursor: pointer;
+  width: 2rem;
+  margin: 1rem;
+}
