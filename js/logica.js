@@ -90,7 +90,7 @@ function decrypt() {
 function copyToClipboard() {
   outputText.select();
   document.execCommand('copy');
-  alert('El contenido se ha copiado al portapapeles');
+  alert('El contenido se ha copiado al portapapelesss');
 }
 inputText.addEventListener("input", () => {
   enableButtons();
