@@ -5,6 +5,7 @@ const btnDecrypt = document.querySelector('.btnDecryptText');
 const btnCopy = document.querySelector('.btnCopy');
 const svgNotFound = document.querySelector('.svg-notfound-text-and-image');
 const svgWarning = document.querySelector('.svg-warning');
+const regex = /[^a-z]/;
 let filterActive = false;
 
 function disableButtons() {
@@ -37,7 +38,7 @@ function encrypt() {
   svgWarning.classList.remove("filter");
   inputText.focus();
   const text = inputText.value;
-  if (/[A-Z0-9Ññ"´!@#$%^&*()_+\-=[\]{};':"\\|,.<>/?]/g.test(text)) {
+  if (regex.test(text)) {
     if (!filterActive) {
       svgWarning.classList.add("filter");
       filterActive = true;
@@ -63,7 +64,7 @@ function encrypt() {
 function decrypt() {
   inputText.focus();
   const text = inputText.value;
-  if (/[A-Z0-9Ññ"´!@#$%^&*()_+\-=[\]{};':"\\|,.<>/?]/g.test(text)) {
+  if (regex.test(text)) {
     if (!filterActive) {
       svgWarning.classList.add("filter");
       filterActive = true;
