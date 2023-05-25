@@ -8,6 +8,7 @@ const svgWarning = document.querySelector('.svg-warning');
 const regex = /[^a-z]/;
 let filterActive = false;
 
+
 function disableButtons() {
   const buttons = document.querySelectorAll(".btnEncryptText, .btnDecryptText, .btnCopy");
   buttons.forEach(button => {
@@ -90,7 +91,7 @@ function decrypt() {
 function copyToClipboard() {
   outputText.select();
   document.execCommand('copy');
-  alert('El contenido se ha copiado al portapapelesss');
+  alert('El contenido se ha copiado al portapapeles');
 }
 inputText.addEventListener("input", () => {
   enableButtons();
@@ -101,15 +102,5 @@ btnEncrypt.addEventListener('click', encrypt);
 btnDecrypt.addEventListener('click', decrypt);
 btnCopy.addEventListener('click', copyToClipboard);
 document.addEventListener('DOMContentLoaded', function() {
-  const linkdn = document.querySelector('.svg-linkdn');
-  const githb = document.querySelector('.svg-githb');
-
-  linkdn.onclick = function() {
-    window.open('https://www.linkedin.com/in/santiagozurdo/');
-  };
-
-  githb.onclick = function() {
-    window.open('https://github.com/SantiagoZurdo');
-  };
 });
 disableButtons();
